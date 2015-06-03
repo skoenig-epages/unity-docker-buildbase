@@ -4,10 +4,10 @@ MAINTAINER Christian Hoffmeister <mail@choffmeister.de>
 WORKDIR /tmp
 
 RUN \
-  wget --quiet https://services.gradle.org/distributions/gradle-2.4-bin.zip && \
-  unzip -q gradle-2.4-bin.zip && \
-  rm gradle-2.4-bin.zip && \
-  mv gradle-2.4 /opt/gradle && \
+  wget --quiet https://services.gradle.org/distributions/gradle-2.2.1-bin.zip && \
+  unzip -q gradle-2.2.1-bin.zip && \
+  rm gradle-2.2.1-bin.zip && \
+  mv gradle-2.2.1 /opt/gradle && \
   ln -s /opt/gradle/bin/gradle /usr/local/bin/gradle
 
 RUN \
