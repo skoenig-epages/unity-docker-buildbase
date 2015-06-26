@@ -3,8 +3,8 @@ MAINTAINER Christian Hoffmeister <mail@choffmeister.de>
 
 WORKDIR /tmp
 
-ENV GRADLE_VERSION=2.2.1
-ENV NODE_VERSION=0.12.4
+ENV GRADLE_VERSION=2.4
+ENV NODE_VERSION=0.12.5
 
 RUN \
   wget --quiet https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
