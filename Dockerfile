@@ -17,3 +17,11 @@ RUN \
   mv node-v0.12.2-linux-x64 /opt/node && \
   ln -s /opt/node/bin/node /usr/local/bin/node && \
   ln -s /opt/node/bin/npm /usr/local/bin/npm
+  
+RUN \
+  wget --quiet https://bintray.com/artifact/download/business/maven/flyway-commandline-3.2.1-linux-x64.tar.gz && \
+  tar -xf flyway-commandline-3.2.1-linux-x64.tar.gz && \
+  rm flyway-commandline-3.2.1-linux-x64.tar.gz && \
+  mv flyway-3.2.1 /opt/flyway-3.2.1 && \
+  ln -s /opt/flyway-3.2.1/flyway /usr/local/bin/flyway
+
